@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "_id": "dress1",
+      "title": "Dress 1",
+      "image": "https://media.boohoo.com/i/boohoo/azz07587_camel_xl/camel-beige-basic-jersey-midi-skirt?$product_page_main_magic_zoom$",
+      "description": " Quality",
+      "price": 40,
+      "availableSizes": ["XL", "XXL"]
+    },
+    {
+      "_id": "dress2",
+      "title": "Dress 2",
+      "image": "https://media.boohoo.com/i/boohoo/fzz44976_camel_xl/camel-beige-ribbed-zip-through-polo-top?$product_page_main_magic_zoom$",
+      "description": " fantastic",
+      "price": 80,
+      "availableSizes": ["XL", "L"]
+    },
+    {
+      "_id": "dress3",
+      "title": "Dress 3",
+      "image": "https://media.boohoo.com/i/boohoo/fzz78886_ecru_xl/ecru-white-california-slogan-oversized-sweatshirt?$product_page_main_magic_zoom$",
+      "description": " Wonderful",
+      "price": 56,
+      "availableSizes": ["S", "XXL"]
+    },
+    {
+      "_id": "dress4",
+      "title": "Dress 4",
+      "image": "https://media.boohoo.com/i/boohoo/dzz04696_white_xl/white-rose-pocket-print-t-shirt?$product_page_main_magic_zoom$",
+      "description": "Astonishing",
+      "price": 90,
+      "availableSizes": ["M", "XL"]
+    },
+    {
+      "_id": "dress5",
+      "title": "Dress 5",
+      "image": "https://media.boohoo.com/i/boohoo/fzz48796_tan_xl/tan-brown-cord-paperbag-waist-belted-shorts?$product_page_main_magic_zoom$",
+      "description": " Lovely",
+      "price": 100,
+      "availableSizes": ["L", "S"]
+    },
+    {
+      "_id": "dress6",
+      "title": "Dress 6",
+      "image": "https://media.boohoo.com/i/boohoo/dzz47634_black_xl_3/black-basic-high-waisted-hotpants?$product_page_main_magic_zoom$",
+      "description": " beautiful",
+      "price": 40,
+      "availableSizes": ["L", "M"]
+    }
+  ]
+}
