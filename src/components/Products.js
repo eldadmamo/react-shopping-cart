@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import Zoom from 'react-reveal/Zoom';
 import {connect} from 'react-redux';
 import {fetchProducts} from '../actions/productActions';
+import {addToCart} from '../actions/cartActions';
 
 class Products extends Component {
   constructor(props) {
@@ -38,7 +39,7 @@ class Products extends Component {
                       href={'#' + product._id}
                       onClick={() => this.openModal(product)}
                     >
-                      <img src={product.image} alt={product.title} />
+                      <img src={product.image} alt={product.title}></img>
                       <p>{product.title}</p>
                     </a>
                     <div className="product-price">
@@ -47,7 +48,7 @@ class Products extends Component {
                         onClick={() => this.props.addToCart(product)}
                         className="button primary"
                       >
-                        Add to Cart
+                        Add To Cart
                       </button>
                     </div>
                   </div>
@@ -60,20 +61,20 @@ class Products extends Component {
           <Modal isOpen={true} onRequestClose={this.closeModal}>
             <Zoom>
               <button className="close-modal" onClick={this.closeModal}>
-                X
+                x
               </button>
               <div className="product-details">
-                <img src={product.image} alt={product.title} />
+                <img src={product.image} alt={product.title}></img>
                 <div className="product-details-description">
                   <p>
                     <strong>{product.title}</strong>
                   </p>
                   <p>{product.description}</p>
                   <p>
-                    Available Sizes:{''}
+                    Avaiable Sizes:{' '}
                     {product.availableSizes.map((x) => (
                       <span>
-                        {''}
+                        {' '}
                         <button className="button">{x}</button>
                       </span>
                     ))}
@@ -87,7 +88,7 @@ class Products extends Component {
                         this.closeModal();
                       }}
                     >
-                      Add to Cart
+                      Add To Cart
                     </button>
                   </div>
                 </div>
@@ -101,4 +102,5 @@ class Products extends Component {
 }
 export default connect((state) => ({products: state.products.filteredItems}), {
   fetchProducts,
+  addToCart,
 })(Products);

@@ -1,7 +1,5 @@
-import {ORDER_PRODUCTS_BY_PRICE} from '../types';
-import {FILTER_PRODUCTS_BY_SIZE} from '../types';
 import {FETCH_PRODUCTS} from '../types';
-
+import {FILTER_PRODUCTS_BY_SIZE, ORDER_PRODUCTS_BY_PRICE} from '../types';
 export const fetchProducts = () => async (dispatch) => {
   const res = await fetch('/api/products');
   const data = await res.json();
@@ -14,7 +12,7 @@ export const fetchProducts = () => async (dispatch) => {
 
 export const filterProducts = (products, size) => (dispatch) => {
   dispatch({
-    ype: FILTER_PRODUCTS_BY_SIZE,
+    type: FILTER_PRODUCTS_BY_SIZE,
     payload: {
       size: size,
       items:
@@ -39,6 +37,7 @@ export const sortProducts = (filteredProducts, sort) => (dispatch) => {
         : 1
     );
   }
+  console.log(sortedProducts);
   dispatch({
     type: ORDER_PRODUCTS_BY_PRICE,
     payload: {
